@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Reservation Page</title>
+        <script src="reservation.js"></script>
+    </head>
+    <body>
+        <h4>Create A Reservation</h4>
+        <div id="formSubmit">
+            <table>
+                <tr>
+                    <td><span>Name of the Reservation : </span></td>
+                    <td><input id="resName" type="text"></td>
+                </tr>
+                <tr>
+                    <td><span>Club Member : </span></td>
+                    <td>
+                        <div> </div>
+                        <input type="radio" id="clubMemberYes" name="member" value="1">
+                        <label for="html">Yes</label><br>
+                        <input type="radio" id="clubMemberNo" name="member" value="2">
+                        <label for="html">No</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Total Number of Adults : </span></td>
+                    <td>
+                        <input id="resAdult" type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Total Number of Children : </span></td>
+                    <td>
+                        <input id="resChildren" type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Submit" onclick="submit()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <hr>
+        
+        <div id="reservationList">
+
+        </div>
+    </body>
+</html>
